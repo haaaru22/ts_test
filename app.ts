@@ -5,10 +5,11 @@ const sum = (s1: number,s2: number): number =>{
 console.log(sum(3, 5.5));
 
 
-const add = (n1: number, n2: number): number => {
+const add = (n1: number, n2: number) => {
     return n1 + n2;
 }
-console.log(add(3, 5));
+const total = add(3,7);
+console.log(total);
 
 
 let hasValue: boolean = false;
@@ -32,6 +33,7 @@ const fruits = ['Apple', 'Banana', 'Grape', 1]
 const book:[string, number, boolean] = ['anime', 2000, true];
 book[1] = 200;
 
+
 enum CofeeSize {
     SHORT,
     TALL,
@@ -42,8 +44,18 @@ const coffee = {
     size: CofeeSize.TALL,
 }
 
-
 let unionType: number | string = 10;
-unionType = '33'
+unionType = 'hello';
+unionType.toUpperCase();
 
-console.log(unionType);
+
+type ClothSize = 'small' | 'medium' | 'large' 
+const cloth:{
+    color: string;
+    size: ClothSize
+} = {
+    color: 'red',
+    size: 'small'
+}
+
+console.log(cloth);
