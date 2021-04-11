@@ -1,4 +1,17 @@
 //オブジェクト
+const myMap = new Map();
+
+myMap.set('id', 3);
+myMap.set('name', 'sasaki')
+console.log(myMap);
+console.log(myMap.get('id'));
+
+const valueList = myMap.values();
+
+for( value of valueList){
+    console.log(value);
+}
+
 
 const member = {
     name: 'yamada',

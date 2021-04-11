@@ -11,6 +11,15 @@ const add = (n1: number, n2: number) => {
 const total = add(3,7);
 console.log(total);
 
+const doubleNumber = (number: number): number => number * 2;
+console.log(doubleNumber(3));
+
+
+function  doubleAndHandle(num: number): void {
+    console.log(num * 2);
+}
+doubleAndHandle(21);
+
 
 let hasValue: boolean = false;
 let count: number = 3;
