@@ -38,9 +38,6 @@ const person = {
     age: 20,
 }
 
-const fruits = ['Apple', 'Banana', 'Grape', 1]
-const book:[string, number, boolean] = ['anime', 2000, true];
-book[1] = 200;
 
 
 enum CofeeSize {
